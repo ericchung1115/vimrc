@@ -134,3 +134,11 @@ nmap <leader>e :NERDTreeToggle<CR>
 "Bundle 'mattn/gist-vim.git'
 "let g:gist_detect_filetype = 1
 
+if has("autocmd")
+	autocmd BufRead *.txt 	set tw=78   
+	autocmd BufReadPost *      
+				\	if line("'\"") > 0 && line ("'\"") <= line("$") |     
+				\   exe "normal g'\"" |    
+				\ endif
+endif
+
