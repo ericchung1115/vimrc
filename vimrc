@@ -52,7 +52,7 @@ set clipboard=unnamed
 set undofile
 set undodir=~/.vim/undo
 set listchars=tab:>-,eol:$
-set si
+set ic
 " command mode completion
 " ----------------------------
 set wildmode=full
